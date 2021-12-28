@@ -1,0 +1,191 @@
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: none;
+	overflow-y: scroll;
+}
+
+::-webkit-scrollbar-track
+{
+	border: 1px solid transparent;
+	background-color: #000;  /* fallback for old browsers */
+
+}
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #FF0000;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 3px;
+	background-color: #FF0000;
+	opacity: 30%;
+}
+
+.nav{
+	padding: 1px;
+	background: #FF0000;
+	margin-bottom: 0;
+}
+
+.nav-li{
+	display: inline-block;
+}
+
+.nav-link{
+	text-decoration: none;
+	color: #fff;
+	margin-right: 15px;
+	font-size: 24px;
+}
+
+.banner-container{
+	padding: 1px;
+	height: 500px;
+	text-align: center;
+	background: url('fondo.png');
+	background-size: cover;
+}
+
+.title{
+	font-family: fantasy;
+	background: #ccc;
+	background: linear-gradient(#FFFF00, #fff, #FFFF00, #0042FF);
+	font-size: 2.6rem;
+
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+.words{
+	margin-right: 10px;
+	display: inline-block;
+}
+
+#search{
+	font-size: 18px;
+	height: 30px;
+	width: 50%;
+	outline: none;
+	margin-right: -2.5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+#btn-send{
+	background: #48e;
+	color: #fff;
+	border: none;
+	font-size: 18px;
+	height: 34px;
+	border-top-right-radius: 5px;
+	margin-left: -1px;
+	border-bottom-right-radius: 5px;
+}
+
+.action{
+	display: inline-block;
+}
+
+
+.container{
+	height: 900px;
+	border-radius: 25px;
+	width: 70%;
+	background: #F2F2F2;
+	border: 2px solid #FFFF00;
+	margin: auto;
+	text-align: center;
+}
+
+.pokedex-title{
+	font-family: fantasy;
+	font-size: 35px;
+	color: #000;
+}
+
+.info{
+	font-size: 35px;
+	color: #fff;
+}
+
+.img{
+	width: 400px;
+	height: 500px;
+	background: #fff;
+/*	border: 1px solid #FF0000;
+*/	border-radius: 25px;
+}
+
+.flex-item{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.container-info{
+	margin-left: 10px;
+	width: 40%;
+	height: 500px;
+	border-radius: 25px;
+/*	background: #E1E1E1;
+*/}
+
+.container-type{
+	margin: auto;
+	width: 40%;
+	color: #000;
+	border-radius: 15px;
+}
+
+.type{
+	border-radius: 15px;
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 850px) and (max-height: 1200px){
+	.container{
+	height: 800px;
+	border-radius: 25px;
+	width: 90%;
+	margin: auto;
+    }
+   .img{
+	width: 350px;
+	height: 500px;
+    }
+    .container-info{
+    	width: 50%;
+    }
+}
+
+@media only screen and (max-width: 850px) and (max-height: 1200px){
+	.img{
+		width: 300px;
+		height: 400px;
+	}
+	.container-info{
+		width: 56%;
+	}
+	.container{
+		width: 98%;
+	}
+}
+
+@media only screen and (max-width: 1400px) and (min-height: 1300px){
+	.banner-container{
+		height: 700px;
+	}
+	.container-info{
+		height: 550px;
+	}
+	.container{
+		margin-top: 40px;
+		width: 90%;
+	}
+	form{
+		margin-top: 40px;
+
+	}
+}
